@@ -1,0 +1,206 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.container0 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-name {
+  font-family: 'Srisakdi', cursive;
+  text-align: center;
+  width: 50%;
+  padding: 50px;
+  font-size: 30px;
+  background-color: brown;
+}
+
+#enter-player-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid khaki;
+  background-color: transparent;
+  color: white;
+}
+
+#start {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: khaki;
+  border: none;
+  padding: 10px 15px;
+}
+
+.container1 {
+  font-family: 'Kalam', cursive;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 25px;
+  opacity: 0;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+#cpu, #player {
+  font-family: 'Sniglet', cursive;
+  background-color: chocolate;
+  color: deepskyblue;
+  width: 15%;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 25%;
+  border: 2px double deepskyblue;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#cpu-score, #player-score {
+  font-family: 'Kalam', cursive;
+  font-size: 40px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+#cpu-choice {
+  width: 150px;
+  height: 150px;
+}
+
+#player-choice {
+  width: 150px;
+  height: 150px;
+}
+
+.c1, .c2, .c3, .p1, .p2, .p3 {
+  border-radius: 25%;
+}
+
+.c1 {
+  background-color: fuchsia;
+}
+
+.c2 {
+  background-color: firebrick;
+}
+
+.c3 {
+  background-color: saddlebrown;
+}
+
+.p1{
+  background-color: crimson;
+}
+
+.p2 {
+  background-color: midnightblue;
+}
+
+.p3 {
+  background-color: indigo;
+}
+
+#play {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+hr {
+  border: 2px groove yellow;
+}
+
+
+/*Animations from animista.net*/
+
+.hideDialog {
+  animation: roll-out-top 0.6s ease-in both;
+}
+
+.attention {
+  animation: heartbeat 1.5s ease-in-out both;
+}
+
+.tracking {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.displayRPS {
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-out-top {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+}
